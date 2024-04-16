@@ -163,7 +163,7 @@ collections:
       layout: post
     output: true
     permalink: /:collection/:title/
-  projects:
+  research:
     output: true
     permalink: /:collection/:title/
   members:
