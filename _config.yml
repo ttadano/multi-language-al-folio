@@ -33,7 +33,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -43,7 +43,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 930px
+max_width: 800px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -166,6 +166,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:title/
+  members:
+    output: true
+    permalink: /:collection/:name/
 
 announcements:
   enabled: true
