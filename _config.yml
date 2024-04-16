@@ -3,11 +3,11 @@
 # -----------------------------------------------------------------------------
 
 title: Spin Theory Group @ NIMS # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+first_name: Spin Theory Group
+middle_name: 
+last_name: 
+email: 
+keywords: # add your own keywords or leave empty
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://george-gca.github.io # the base hostname & protocol for your site
@@ -413,7 +413,7 @@ enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
-enable_project_categories: true # enables categorization of projects into multiple categories
+enable_project_categories: false # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 
@@ -593,7 +593,7 @@ jekyll_get_json:
   - data: resume_en-us
     json: assets/json/resume_en-us.json # it can also be an url
   - data: resume_pt-br
-    json: assets/json/resume_pt-br.json # it can also be an url
+    json: assets/json/resume_ja-jp.json # it can also be an url
 jsonresume:
   - basics
   - work
