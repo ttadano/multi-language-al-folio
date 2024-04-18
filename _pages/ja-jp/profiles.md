@@ -14,17 +14,17 @@ profiles:
 
 {% assign groups = site.members | sort: "group_rank" | map: "group" | uniq %}
 {% for group in groups %}
-## {{ group }}
+### {{ group }}
 
-    {% assign members = site.members | sort: "lastname" | where: "group", group %}
+    {% assign members = site.members | sort: "rank_in_group" | where: "group", group %}
     {% for member in members %}
 <p>
     <div class="card {% if member.inline == false %}hoverable{% endif %}">
-        <div class="row no-gutters">
-            <div class="col-sm-3 col-md-3">
+        <div class="row mt-2">
+            <div class="col-sm-3 col-md-2">
                 <img src="{{ '/assets/img/' | append: member.profile.image | relative_url }}" class="card-img img-fluid" alt="{{ member.profile.name }}"/>
             </div>
-            <div class="team col-sm-9 col-md-9">
+            <div class="team col-sm-9 col-md-10">
                 <div class="card-body">
                     {% if member.inline == false %}<a href="{{ member.url | relative_url }}">{% endif %}
                     <h5 class="card-title">{{ member.profile.name }}</h5>
@@ -57,14 +57,12 @@ profiles:
                     {% if member.profile.website %}
                         <a href="{{ member.profile.website }}" class="card-link" target="_blank"><i class="fas fa-globe"></i></a>
                     {% endif %}
-                    <p class="card-text">
-                        <small class="test-muted"><i class="fas fa-thumbtack"></i> {{ member.profile.address | replace: '<br />', ', ' }}</small>
-                    </p>
                 </div>
             </div>
         </div>
     </div>
 </p>
     {% endfor %}
+<br>
 {% endfor %}
 

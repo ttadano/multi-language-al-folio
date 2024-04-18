@@ -3,6 +3,7 @@ layout: page
 inline: false
 group: Special Researcher/特別研究員
 group_rank: 2
+rank_in_group: 1
 
 title: Prof. Dr. Yoshio Miura / 三浦　良雄
 description:  NIMS Invited Researcher / NIMS招聘研究員
@@ -21,5 +22,6 @@ profile:
     twitter: 
     linkedin: 
     orcid: 
+    website: https://samurai.nims.go.jp/profiles/miura_yoshio
 ---
 

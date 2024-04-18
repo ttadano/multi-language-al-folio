@@ -3,6 +3,7 @@ layout: page
 inline: false
 group: Permanent Staff/定年制職員
 group_rank: 1
+rank_in_group: 2
 
 title: Dr. Keisuke Masuda / 増田 啓介
 description: Senior Researcher / 主任研究員
@@ -20,6 +21,7 @@ profile:
     scholar: -rk5aGUAAAAJ
     twitter: 
     linkedin: 
-    orcid: 
+    orcid:
+    website: https://samurai.nims.go.jp/profiles/masuda_keisuke
 ---
 

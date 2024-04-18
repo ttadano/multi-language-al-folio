@@ -14,17 +14,17 @@ profiles:
 
 {% assign groups = site.members | sort: "group_rank" | map: "group" | uniq %}
 {% for group in groups %}
-## {{ group }}
+### {{ group }}
 
-    {% assign members = site.members | sort: "lastname" | where: "group", group %}
+    {% assign members = site.members | sort: "rank_in_group" | where: "group", group %}
     {% for member in members %}
 <p>
     <div class="card {% if member.inline == false %}hoverable{% endif %}">
-        <div class="row no-gutters">
-            <div class="col-sm-4 col-md-3">
+        <div class="row mt-2">
+            <div class="col-sm-3 col-md-2">
                 <img src="{{ '/assets/img/' | append: member.profile.image | relative_url }}" class="card-img img-fluid" alt="{{ member.profile.name }}" />
             </div>
-            <div class="team col-sm-8 col-md-9">
+            <div class="team col-sm-9 col-md-10">
                 <div class="card-body">
                     {% if member.inline == false %}<a href="{{ member.url | relative_url }}">{% endif %}
                     <h5 class="card-title">{{ member.profile.name }}</h5>
@@ -36,6 +36,9 @@ profiles:
                     {% if member.profile.email %}
                         <a href="mailto:{{ member.profile.email }}" class="card-link"><i class="fas fa-envelope"></i></a>
                     {% endif %}
+                    {% if member.profile.scholar %}
+                        <a href="https://scholar.google.co.jp/citations?user={{ member.profile.scholar }}" class="card-link" target="_blank"><i class="fab fa-google-scholar"></i></a>
+                    {% endif %}                    
                     {% if member.profile.phone %}
                         <a href="tel:{{ member.profile.phone }}" class="card-link"><i class="fas fa-phone"></i></a>
                     {% endif %}
@@ -60,4 +63,5 @@ profiles:
     </div>
 </p>
     {% endfor %}
+<br>
 {% endfor %}

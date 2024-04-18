@@ -1,15 +1,16 @@
 ---
 page_id: project_3
 layout: page
-title: 磁性材料の有限温度フォノン効果
+title: Lattice dynamics effects in magnetic materials
 description: 
 img: assets/img/phonon_mag.jpg
 importance: 3
+related_publications: true
 ---
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-7 mt-3 mt-md-0">
-    材料を構成する原子核は空間に静止しているのでは無く、熱的あるいは量子的にゆらいでいます。このゆらぎは物質の安定性や電子状態などに影響を与えることが知られています。本研究では、<font color="red"><b>磁性材料における原子核ゆらぎ効果の定量予測を目指し</b></font>、第一原理フォノン計算を活用した新手法開発と応用計算を行っています。最近では、レアアースと鉄から成る二元合金のフォノン計算を網羅的に実施し、相安定性におけるフォノン効果を解析しました。その結果、フォノンエントロピーが多くの準安定相を有限温度で安定化させる効果があることがわかりました。また、スピン‐フォノン結合が有限温度における磁気モーメントや交換結合、そして結晶磁気異方性などの磁性に及ぼす影響にも興味があり、手法開発を含めた基礎研究も進めています。
+      The atomic nuclei that make up materials are not stationary in space, but fluctuate thermally or quantum. These fluctuations are known to affect the stability and electronic states of materials. In this research, <font color="red"><b>we aim at quantitative prediction of nuclear fluctuation effects in magnetic materials</b></font>, and are developing a new method using first-principles phonon calculations and performing applied calculations. Recently, we have performed comprehensive phonon calculations for binary alloys composed of rare earths and iron, and analyzed phonon effects on phase stability. We found that phonon entropy has the effect of stabilizing many metastable phases at finite temperatures {% cite Xing2021-ql %}. We are also interested in the effects of spin-phonon coupling on magnetism, including magnetic moments, exchange coupling, and crystal magnetic anisotropy at finite temperatures, and are conducting fundamental research including method development. {% cite Xing2022-iv %}
     </div>
     <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/phonon_mag.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
