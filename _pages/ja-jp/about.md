@@ -11,7 +11,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-<img style="display: block; margin: 0 auto;" src="../assets/img/topimage.jpg" width="100%">
+<img src="{{ '/assets/img/topimage.jpg' | relative_url }}" class="card-img img-fluid" alt="Top image" />
 
 <div class="container">
 <div class="row no-gutters">
@@ -20,10 +20,14 @@ social: false # includes social icons at the bottom of the page
 </div>
 <div class="col-sm-3">
 <div class="col row-cols-1 mb-2">
-<a href="https://www.nims.go.jp/"><img style="width: 100%" src="../assets/img/nims_banner.jpg"></a>
+<a href="https://www.nims.go.jp/eng">
+<img src="{{ '/assets/img/nims_banner.jpg' | relative_url }}" class="card-img img-fluid" alt="Link to NIMS homepage" />
+</a>
 </div>
 <div class="col row-cols-1">
-<a href="https://www.nims.go.jp/mmu/"><img style="width: 100%" src="../assets/img/CMSM_banner.jpg"></a>
+<a href="https://www.nims.go.jp/mmu/en/index.html">
+<img src="{{ '/assets/img/CMSM_banner.jpg' | relative_url }}" class="card-img img-fluid" alt="Link to CMSM homepage" />
+</a>
 </div>
 </div>
 </div>

@@ -16,7 +16,7 @@ profile:
     name: Dr. Kenji Nawa / 名和 憲嗣
     position: Guest Researcher / 外来研究員
     align: right
-    image: nawa_s.gif
+    image: Nawa_s.gif
     email: Nawa.Kenji@nims.go.jp
     twitter: 
     linkedin: 
