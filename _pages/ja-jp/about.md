@@ -20,12 +20,12 @@ social: false # includes social icons at the bottom of the page
 </div>
 <div class="col-sm-3">
 <div class="col row-cols-1 mb-2">
-<a href="https://www.nims.go.jp/eng">
+<a href="https://www.nims.go.jp/">
 <img src="{{ '/assets/img/nims_banner.jpg' | relative_url }}" class="card-img img-fluid" alt="Link to NIMS homepage" />
 </a>
 </div>
 <div class="col row-cols-1">
-<a href="https://www.nims.go.jp/mmu/en/index.html">
+<a href="https://www.nims.go.jp/mmu/index.html">
 <img src="{{ '/assets/img/CMSM_banner.jpg' | relative_url }}" class="card-img img-fluid" alt="Link to CMSM homepage" />
 </a>
 </div>
